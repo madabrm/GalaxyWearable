@@ -14,6 +14,8 @@ jobs:
       matrix:
         include:
           - package: com.samsung.android.neatplugin
+          - package: com.samsung.accessory
+          - package: com.samsung.android.app.watchmanager
       max-parallel: 1
 
     steps:
@@ -28,7 +30,7 @@ jobs:
        sudo apt-get install -y openssl signapk xxd
        sudo wget -O /usr/local/bin/apktool https://bitbucket.org/iBotPeaches/apktool/raw/master/scripts/linux/apktool
        sudo chmod +x /usr/local/bin/apktool
-       sudo wget -O /usr/local/bin/apktool.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.7.0.jar
+       sudo wget -O /usr/local/bin/apktool.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.10.0.jar
 
     - name: Fetch APK
       run: |
