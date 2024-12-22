@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - package: com.samsung.accessory.neatplugin
+          - package: com.samsung.android.neatplugin
           - package: com.samsung.android.app.watchmanager
           - package: com.samsung.accessory
       max-parallel: 1
