@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         include:
+          - package: com.sec.android.app.shealth
           - package: com.samsung.android.neatplugin
           - package: com.samsung.accessory
           - package: com.samsung.android.app.watchmanager
