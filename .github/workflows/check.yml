@@ -55,17 +55,18 @@ jobs:
       run: |
        find ${{ matrix.package }}/smali*/com/sec ${{ matrix.package }}/smali*/com/samsung/ -name *.smali | xargs sed -i 's|Landroid/os/Build;->MANUFACTURER|Landroid/os/Build;->PRODUCT|g'
 
+
     - name: Prepare signing
       id: cert
       if: steps.check.outputs.need_update == 1
       run: |
-      echo "${{ secrets.RELEASEKEY_X509 }}" | base64 -d > /tmp/releasekey.x509.pem
-      echo "${{ secrets.RELEASEKEY_PK8 }}" | base64 -d > /tmp/releasekey.pk8
-      ls -l /tmp/releasekey.x509.pem /tmp/releasekey.pk8
-      cat /tmp/releasekey.x509.pem
-      openssl x509 -in /tmp/releasekey.x509.pem -text -noout
-      cert_hex=$(openssl x509 -in /tmp/releasekey.x509.pem -out - -outform DER | xxd -p | tr -d \\n)
-      echo "cert_hex=$cert_hex" >> $GITHUB_OUTPUT
+        echo "${{ secrets.RELEASEKEY_X509 }}" | base64 -d > /tmp/releasekey.x509.pem
+        echo "${{ secrets.RELEASEKEY_PK8 }}" | base64 -d > /tmp/releasekey.pk8
+        ls -l /tmp/releasekey.x509.pem /tmp/releasekey.pk8
+        cat /tmp/releasekey.x509.pem
+        openssl x509 -in /tmp/releasekey.x509.pem -text -noout
+        cert_hex=$(openssl x509 -in /tmp/releasekey.x509.pem -out - -outform DER | xxd -p | tr -d \\n)
+        echo "cert_hex=$cert_hex" >> $GITHUB_OUTPUT
 
 
     - name: Replace samsung certificate
