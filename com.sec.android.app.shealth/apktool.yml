@@ -7,13 +7,13 @@ usesFramework:
   tag: null
 sdkInfo:
   minSdkVersion: 29
-  targetSdkVersion: 34
+  targetSdkVersion: 35
 packageInfo:
   forcedPackageId: 127
   renameManifestPackage: null
 versionInfo:
-  versionCode: 6285005
-  versionName: 6.28.5.005
+  versionCode: 6290075
+  versionName: 6.29.0.075
 resourcesAreCompressed: false
 sharedLibrary: false
 sparseResources: false
@@ -31,9 +31,9 @@ unknownFiles:
   firebase-components.properties: 8
   firebase-datatransport.properties: 8
   firebase-encoders-json.properties: 8
+  firebase-encoders-proto.properties: 8
   firebase-encoders.properties: 8
   firebase-iid-interop.properties: 8
-  firebase-iid.properties: 8
   firebase-installations-interop.properties: 8
   firebase-installations.properties: 8
   firebase-measurement-connector.properties: 8
@@ -50,9 +50,14 @@ unknownFiles:
   opencsv_en.properties: 8
   opencsv_fr.properties: 8
   opencsv_pt_BR.properties: 8
+  play-services-auth-api-phone.properties: 8
+  play-services-auth-base.properties: 8
+  play-services-auth.properties: 8
   play-services-base.properties: 8
   play-services-basement.properties: 8
+  play-services-cloud-messaging.properties: 8
   play-services-cronet.properties: 8
+  play-services-fido.properties: 8
   play-services-location.properties: 8
   play-services-maps.properties: 8
   play-services-mlkit-text-recognition-common.properties: 8
@@ -613,11 +618,21 @@ unknownFiles:
   com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ZA: 8
   com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ZM: 8
   com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ZW: 8
+  com/samsung/android/app/shealth/tracker/dailyactivity/model/aisuggestion/readme.md: 8
+  com/samsung/android/app/shealth/tracker/dailyactivity/model/manager/readme.md: 8
+  com/samsung/android/app/shealth/tracker/dailyactivity/model/service/readme.md: 8
+  com/samsung/android/app/shealth/tracker/dailyactivity/model/viewinterface/readme.md: 8
+  com/samsung/android/app/shealth/tracker/dailyactivity/ui/view/track/readme.md: 8
+  com/samsung/android/app/shealth/tracker/dailyactivity/widget/readme.md: 8
   com/samsung/android/app/shealth/tracker/heartrate/doc/HeartRateLog.puml: 8
+  com/samsung/android/app/shealth/tracker/pedometer/service/legacy/floor/floorsummary/readme.md: 8
+  com/samsung/android/app/shealth/tracker/pedometer/service/query/readme.md: 8
+  com/samsung/android/app/shealth/tracker/pedometer/testtool/readme.md: 8
   com/samsung/android/app/shealth/tracker/sensorcommon/doc/BaseTag.puml: 8
   com/samsung/android/app/shealth/tracker/sensorcommon/doc/ConnectedWearableNode.puml: 8
   com/samsung/android/app/shealth/tracker/sensorcommon/doc/TagFactory.puml: 8
   com/samsung/android/app/shealth/tracker/sensorcommon/doc/Tip.puml: 8
+  com/samsung/android/app/shealth/util/ReadMe.md: 8
   google/protobuf/any.proto: 8
   google/protobuf/api.proto: 8
   google/protobuf/descriptor.proto: 8
@@ -655,8 +670,10 @@ doNotCompress:
 - classes3.dex
 - classes4.dex
 - classes5.dex
+- classes6.dex
 - resources.arsc
 - assets/model_v2_1_4.tflite
+- webp
 - assets/dexopt/baseline.prof
 - assets/dexopt/baseline.profm
 - m4a
@@ -670,6 +687,7 @@ doNotCompress:
 - lib/arm64-v8a/lib_secspo2post.sensor.samsung.so
 - lib/arm64-v8a/libc++_shared.so
 - lib/arm64-v8a/libfbjni.so
+- lib/arm64-v8a/libicing.so
 - lib/arm64-v8a/libimage_processing_util_jni.so
 - lib/arm64-v8a/libload-strings.so
 - lib/arm64-v8a/libmobilesleepjni.so
@@ -692,6 +710,7 @@ doNotCompress:
 - lib/armeabi-v7a/lib_secspo2post.sensor.samsung.so
 - lib/armeabi-v7a/libc++_shared.so
 - lib/armeabi-v7a/libfbjni.so
+- lib/armeabi-v7a/libicing.so
 - lib/armeabi-v7a/libimage_processing_util_jni.so
 - lib/armeabi-v7a/libload-strings.so
 - lib/armeabi-v7a/libmobilesleepjni.so
@@ -704,7 +723,7 @@ doNotCompress:
 - lib/armeabi-v7a/libstressjni.so
 - lib/armeabi-v7a/libtensorflowlite_jni.so
 - lib/armeabi-v7a/libtensorflowlite_jni_gms_client.so
-- webp
-- ogg
 - png
+- ogg
+- jpg
 - gif
