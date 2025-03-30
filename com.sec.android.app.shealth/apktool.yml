@@ -12,13 +12,15 @@ packageInfo:
   forcedPackageId: 127
   renameManifestPackage: null
 versionInfo:
-  versionCode: 6293007
-  versionName: 6.29.3.007
+  versionCode: 6295017
+  versionName: 6.29.5.017
 resourcesAreCompressed: false
 sharedLibrary: false
 sparseResources: false
 unknownFiles:
   DebugProbesKt.bin: 8
+  app-update-ktx.properties: 8
+  app-update.properties: 8
   build-data.properties: 8
   common.properties: 8
   convertLanguageToBoolean.properties: 8
@@ -26,6 +28,7 @@ unknownFiles:
   convertLanguageToBoolean_en.properties: 8
   convertLanguageToBoolean_fr.properties: 8
   convertLanguageToBoolean_pt_BR.properties: 8
+  core-common.properties: 8
   firebase-annotations.properties: 8
   firebase-common.properties: 8
   firebase-components.properties: 8
