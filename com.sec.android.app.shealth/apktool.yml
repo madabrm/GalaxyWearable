@@ -7,13 +7,13 @@ usesFramework:
   tag: null
 sdkInfo:
   minSdkVersion: 29
-  targetSdkVersion: 35
+  targetSdkVersion: 36
 packageInfo:
   forcedPackageId: 127
   renameManifestPackage: null
 versionInfo:
-  versionCode: 6295017
-  versionName: 6.29.5.017
+  versionCode: 6301003
+  versionName: 6.30.1.003
 resourcesAreCompressed: false
 sharedLibrary: false
 sparseResources: false
@@ -675,11 +675,13 @@ doNotCompress:
 - classes5.dex
 - classes6.dex
 - resources.arsc
-- assets/model_v2_1_4.tflite
+- assets/model_v3_0_0.tflite
 - webp
+- assets/srbr_features_extractor.tflite
+- assets/tcn_ibi_t2v_stages_sum_214_l8_db6.tflite
 - assets/dexopt/baseline.prof
 - assets/dexopt/baseline.profm
-- m4a
+- png
 - lib/arm64-v8a/libDiagMonKey.so
 - lib/arm64-v8a/libInteractiveCoachingEngine.so
 - lib/arm64-v8a/libPedometer.so
@@ -699,6 +701,7 @@ doNotCompress:
 - lib/arm64-v8a/libopencv_java4.so
 - lib/arm64-v8a/libpytorch_jni.so
 - lib/arm64-v8a/libsecsqlite.so
+- lib/arm64-v8a/libsleepscore.so
 - lib/arm64-v8a/libstpr.so
 - lib/arm64-v8a/libstressjni.so
 - lib/arm64-v8a/libtensorflowlite_jni.so
@@ -722,11 +725,11 @@ doNotCompress:
 - lib/armeabi-v7a/libopencv_java4.so
 - lib/armeabi-v7a/libpytorch_jni.so
 - lib/armeabi-v7a/libsecsqlite.so
+- lib/armeabi-v7a/libsleepscore.so
 - lib/armeabi-v7a/libstpr.so
 - lib/armeabi-v7a/libstressjni.so
 - lib/armeabi-v7a/libtensorflowlite_jni.so
 - lib/armeabi-v7a/libtensorflowlite_jni_gms_client.so
-- png
 - ogg
 - jpg
 - gif
